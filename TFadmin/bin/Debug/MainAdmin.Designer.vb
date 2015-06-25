@@ -23,14 +23,14 @@ Partial Class MainAdmin
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim TreeNode17 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("System Parameters")
-        Dim TreeNode18 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Areas")
-        Dim TreeNode19 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Cameras")
-        Dim TreeNode20 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Zones")
-        Dim TreeNode21 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Doors")
-        Dim TreeNode22 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("System Setup", New System.Windows.Forms.TreeNode() {TreeNode17, TreeNode18, TreeNode19, TreeNode20, TreeNode21})
-        Dim TreeNode23 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Users")
-        Dim TreeNode24 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Tryfan", New System.Windows.Forms.TreeNode() {TreeNode22, TreeNode23})
+        Dim TreeNode1 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("System Parameters")
+        Dim TreeNode2 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Areas")
+        Dim TreeNode3 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Cameras")
+        Dim TreeNode4 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Zones")
+        Dim TreeNode5 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Doors")
+        Dim TreeNode6 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("System Setup", New System.Windows.Forms.TreeNode() {TreeNode1, TreeNode2, TreeNode3, TreeNode4, TreeNode5})
+        Dim TreeNode7 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Users")
+        Dim TreeNode8 As System.Windows.Forms.TreeNode = New System.Windows.Forms.TreeNode("Tryfan", New System.Windows.Forms.TreeNode() {TreeNode6, TreeNode7})
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainAdmin))
         Me.AddArea = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.AddAreaAdd = New System.Windows.Forms.ToolStripMenuItem()
@@ -40,6 +40,8 @@ Partial Class MainAdmin
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.MainTree = New System.Windows.Forms.TreeView()
         Me.sysParamsPage = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.CancelParams = New System.Windows.Forms.Button()
         Me.ImportCams = New System.Windows.Forms.Button()
         Me.saveParams = New System.Windows.Forms.Button()
@@ -130,8 +132,6 @@ Partial Class MainAdmin
         Me.ZoneIcon = New System.Windows.Forms.Button()
         Me.DeleteZone = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.DoDeleteZone = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.AddArea.SuspendLayout()
         Me.AddZone.SuspendLayout()
         Me.ActionPoint.SuspendLayout()
@@ -198,27 +198,27 @@ Partial Class MainAdmin
         Me.MainTree.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MainTree.Location = New System.Drawing.Point(12, 32)
         Me.MainTree.Name = "MainTree"
-        TreeNode17.Name = "sysParams"
-        TreeNode17.Tag = "sysParams"
-        TreeNode17.Text = "System Parameters"
-        TreeNode18.ContextMenuStrip = Me.AddArea
-        TreeNode18.Name = "sysAreas"
-        TreeNode18.Text = "Areas"
-        TreeNode19.Name = "sysCams"
-        TreeNode19.Text = "Cameras"
-        TreeNode20.ContextMenuStrip = Me.AddZone
-        TreeNode20.Name = "sysZones"
-        TreeNode20.Text = "Zones"
-        TreeNode21.Name = "sysDoors"
-        TreeNode21.Text = "Doors"
-        TreeNode22.Name = "SystemSetup"
-        TreeNode22.Text = "System Setup"
-        TreeNode23.Name = "sysUsers"
-        TreeNode23.Text = "Users"
-        TreeNode24.Name = "Root"
-        TreeNode24.Tag = "Welcome"
-        TreeNode24.Text = "Tryfan"
-        Me.MainTree.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode24})
+        TreeNode1.Name = "sysParams"
+        TreeNode1.Tag = "sysParams"
+        TreeNode1.Text = "System Parameters"
+        TreeNode2.ContextMenuStrip = Me.AddArea
+        TreeNode2.Name = "sysAreas"
+        TreeNode2.Text = "Areas"
+        TreeNode3.Name = "sysCams"
+        TreeNode3.Text = "Cameras"
+        TreeNode4.ContextMenuStrip = Me.AddZone
+        TreeNode4.Name = "sysZones"
+        TreeNode4.Text = "Zones"
+        TreeNode5.Name = "sysDoors"
+        TreeNode5.Text = "Doors"
+        TreeNode6.Name = "SystemSetup"
+        TreeNode6.Text = "System Setup"
+        TreeNode7.Name = "sysUsers"
+        TreeNode7.Text = "Users"
+        TreeNode8.Name = "Root"
+        TreeNode8.Tag = "Welcome"
+        TreeNode8.Text = "Tryfan"
+        Me.MainTree.Nodes.AddRange(New System.Windows.Forms.TreeNode() {TreeNode8})
         Me.MainTree.Size = New System.Drawing.Size(207, 561)
         Me.MainTree.TabIndex = 3
         '
@@ -253,10 +253,30 @@ Partial Class MainAdmin
         Me.sysParamsPage.Controls.Add(Me.MileIP)
         Me.sysParamsPage.Controls.Add(Me.Label1)
         Me.sysParamsPage.Enabled = False
-        Me.sysParamsPage.Location = New System.Drawing.Point(12, 223)
+        Me.sysParamsPage.Location = New System.Drawing.Point(895, 455)
         Me.sysParamsPage.Name = "sysParamsPage"
         Me.sysParamsPage.Size = New System.Drawing.Size(627, 561)
         Me.sysParamsPage.TabIndex = 5
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(405, 331)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(164, 25)
+        Me.Button2.TabIndex = 42
+        Me.Button2.TabStop = False
+        Me.Button2.Text = "Import Doors"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(405, 196)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(164, 25)
+        Me.Button1.TabIndex = 41
+        Me.Button1.TabStop = False
+        Me.Button1.Text = "Import Zones"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'CancelParams
         '
@@ -566,7 +586,7 @@ Partial Class MainAdmin
         Me.WelcomePage.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.WelcomePage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.WelcomePage.Controls.Add(Me.WelcomeLbl)
-        Me.WelcomePage.Location = New System.Drawing.Point(206, 76)
+        Me.WelcomePage.Location = New System.Drawing.Point(225, 32)
         Me.WelcomePage.Name = "WelcomePage"
         Me.WelcomePage.Size = New System.Drawing.Size(627, 561)
         Me.WelcomePage.TabIndex = 17
@@ -902,7 +922,7 @@ Partial Class MainAdmin
         Me.CamIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.CamIcon.Enabled = False
         Me.CamIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CamIcon.Location = New System.Drawing.Point(884, 537)
+        Me.CamIcon.Location = New System.Drawing.Point(872, 528)
         Me.CamIcon.Margin = New System.Windows.Forms.Padding(0)
         Me.CamIcon.Name = "CamIcon"
         Me.CamIcon.Size = New System.Drawing.Size(20, 20)
@@ -956,7 +976,7 @@ Partial Class MainAdmin
         Me.zonePage.Controls.Add(Me.ZoneNo)
         Me.zonePage.Controls.Add(Me.Label25)
         Me.zonePage.Enabled = False
-        Me.zonePage.Location = New System.Drawing.Point(225, 33)
+        Me.zonePage.Location = New System.Drawing.Point(858, 227)
         Me.zonePage.Name = "zonePage"
         Me.zonePage.Size = New System.Drawing.Size(627, 561)
         Me.zonePage.TabIndex = 23
@@ -986,7 +1006,7 @@ Partial Class MainAdmin
         Me.ZoneType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ZoneType.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ZoneType.FormattingEnabled = True
-        Me.ZoneType.Items.AddRange(New Object() {"Not Defined", "Deck Sensor", "PIR", "VMD", "Door Contact"})
+        Me.ZoneType.Items.AddRange(New Object() {"Not Defined", "Deck Sensor", "PIR", "VMD", "Door Contact", "Panic Button"})
         Me.ZoneType.Location = New System.Drawing.Point(235, 91)
         Me.ZoneType.Name = "ZoneType"
         Me.ZoneType.Size = New System.Drawing.Size(164, 24)
@@ -1174,34 +1194,14 @@ Partial Class MainAdmin
         Me.DoDeleteZone.Size = New System.Drawing.Size(138, 26)
         Me.DoDeleteZone.Text = "Delete Zone"
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(405, 196)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(164, 25)
-        Me.Button1.TabIndex = 41
-        Me.Button1.TabStop = False
-        Me.Button1.Text = "Import Zones"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(405, 331)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(164, 25)
-        Me.Button2.TabIndex = 42
-        Me.Button2.TabStop = False
-        Me.Button2.Text = "Import Doors"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'MainAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1284, 819)
+        Me.Controls.Add(Me.zonePage)
         Me.Controls.Add(Me.sysParamsPage)
         Me.Controls.Add(Me.ZoneIcon)
-        Me.Controls.Add(Me.zonePage)
         Me.Controls.Add(Me.CamPreviewLbl)
         Me.Controls.Add(Me.CameraPage)
         Me.Controls.Add(Me.ImageViewer)

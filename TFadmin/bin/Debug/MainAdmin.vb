@@ -5,7 +5,8 @@ Imports System.Net.Sockets
 Imports System.Threading
 
 Public Class MainAdmin
-    Public sqlConString As String = "Data Source=JAM\TRYFAN;Initial Catalog=TRYFANdb;Persist Security Info=True;User ID=sa;Password=tryfansaaccount"
+    '    Public sqlConString As String = "Data Source=10.101.19.30\TRYFAN;Initial Catalog=TRYFANdb;Persist Security Info=True;User ID=sa;Password=tryfansaaccount"
+    Public sqlConString As String = "Data Source=10.101.19.30\TRYFAN;Initial Catalog=TRYFANdb;Persist Security Info=True;User ID=sa;Password=tryfansaaccount"
 
     Public ActionTag As String
     Public previewBitmap As Bitmap
@@ -70,11 +71,17 @@ Public Class MainAdmin
         EngineManager.SetAuthentication(0)
 
         'Load Data
-        LoadParameters()
-        LoadAllAreas()
-        LoadAllCams()
-        LoadAllzones()
-
+        Try
+            LoadParameters()
+            LoadAllAreas()
+            LoadAllCams()
+            LoadAllzones()
+        Catch
+            Beep()
+            MessageBox.Show("FAILED TO CONNECT TO TRYFAN DATABASE SERVER" + vbCrLf + "Check Network & Firewall Settings")
+            Application.Exit()
+            End
+        End Try
         MilestoneUser = MileUser.Text
         MilestonePass = MilePass.Text
         MilestoneIP = MileIP.Text
@@ -84,7 +91,6 @@ Public Class MainAdmin
         AreaBox.Cursor = Cursors.Default
         DisplayPage = "WelcomePage" : WelcomeText = "" : EditMode = "View"
         DisplayPannel()
-
     End Sub
 
     Private Sub EnableEdit_CheckedChanged(sender As Object, e As EventArgs) Handles EnableEdit.CheckedChanged

@@ -976,7 +976,7 @@ Partial Class MainAdmin
         Me.zonePage.Controls.Add(Me.ZoneNo)
         Me.zonePage.Controls.Add(Me.Label25)
         Me.zonePage.Enabled = False
-        Me.zonePage.Location = New System.Drawing.Point(858, 445)
+        Me.zonePage.Location = New System.Drawing.Point(858, 227)
         Me.zonePage.Name = "zonePage"
         Me.zonePage.Size = New System.Drawing.Size(627, 561)
         Me.zonePage.TabIndex = 23
@@ -1006,7 +1006,7 @@ Partial Class MainAdmin
         Me.ZoneType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ZoneType.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ZoneType.FormattingEnabled = True
-        Me.ZoneType.Items.AddRange(New Object() {"Not Defined", "Deck Sensor", "PIR", "VMD", "Door Contact"})
+        Me.ZoneType.Items.AddRange(New Object() {"Not Defined", "Deck Sensor", "PIR", "VMD", "Door Contact", "Panic Button"})
         Me.ZoneType.Location = New System.Drawing.Point(235, 91)
         Me.ZoneType.Name = "ZoneType"
         Me.ZoneType.Size = New System.Drawing.Size(164, 24)

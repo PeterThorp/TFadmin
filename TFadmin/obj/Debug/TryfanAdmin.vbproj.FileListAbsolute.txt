@@ -49,3 +49,7 @@ C:\Users\Fabrrique123\Documents\Visual Studio 2013\Projects\TFadmin\TFadmin\bin\
 C:\Users\Fabrrique123\Documents\Visual Studio 2013\Projects\TFadmin\TFadmin\bin\Debug\AxInterop.ImageViewerLib.dll
 C:\Users\Fabrrique123\Documents\Visual Studio 2013\Projects\TFadmin\TFadmin\obj\Debug\AxInterop.ImageViewerLib.dll
 C:\Users\Fabrrique123\Documents\Visual Studio 2013\Projects\TFadmin\TFadmin\bin\Debug\CamIcon.png
+C:\Users\Fabrrique123\Documents\Visual Studio 2013\Projects\TFadmin\TFadmin\bin\Debug\TFadmin.exe.manifest
+C:\Users\Fabrrique123\Documents\Visual Studio 2013\Projects\TFadmin\TFadmin\bin\Debug\TFadmin.application
+C:\Users\Fabrrique123\Documents\Visual Studio 2013\Projects\TFadmin\TFadmin\obj\Debug\TFadmin.exe.manifest
+C:\Users\Fabrrique123\Documents\Visual Studio 2013\Projects\TFadmin\TFadmin\obj\Debug\TFadmin.application
